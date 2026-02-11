@@ -11,10 +11,10 @@ public class NopCommercePage extends BasePage {
 		super(driver);
 	}
     
-	@FindBy(xpath = "//input[@class='email input-validation-error']")
+	@FindBy(xpath = "//input[@class='email valid']")
     WebElement email;
 	
-	@FindBy(xpath = "//input[@class='password")
+	@FindBy(xpath = "//input[@class='password valid']")
     WebElement password;
 	
 	@FindBy(xpath = "//button[@type='submit']")

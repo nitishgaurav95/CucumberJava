@@ -19,7 +19,7 @@ public class Hooks {
 
     @Before
     public void InitializeBrowser() {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Chromedriver\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\CucumberJava\\CucumberJava\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         _driverHelper.setDriver(driver);
     }
