@@ -1,4 +1,4 @@
 $(document).ready(function() {
-CucumberHTML.timelineItems.pushArray([{"id":"2e942a60-6086-4bc5-9508-df151d2d6523","feature":"This feature file is created to practice the automation using the Demo QA website.","scenario":"Verify user can submit details and see output","start":1771410693020,"group":1,"content":"","tags":"@automationpractice,","end":1771410702518,"className":"failed"}]);
+CucumberHTML.timelineItems.pushArray([{"id":"a4666dfa-4e28-443c-b326-1bd4fb7c416d","feature":"This feature file is created to practice the automation using the Demo QA website.","scenario":"02_Verify Tools QA home page","start":1771498729489,"group":1,"content":"","tags":"@automationpractice,","end":1771498735963,"className":"passed"},{"id":"80d4e84c-7110-4d2c-b6b9-ca952b040c01","feature":"This feature file is created to practice the automation using the Demo QA website.","scenario":"01_Verify user can submit details and see output","start":1771498720553,"group":1,"content":"","tags":"@automationpractice,","end":1771498729479,"className":"failed"}]);
 CucumberHTML.timelineGroups.pushArray([{"id":1,"content":"Thread[#1,main,5,main]"}]);
 });

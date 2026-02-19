@@ -31,7 +31,6 @@ public class TextBoxDemoQAPage extends BasePage {
 // ---------------- ACTION METHODS ----------------
 
 public void EnterValueInFullName(String fullName) {
-    cardElements.click();
     txtFullName.clear();
     txtFullName.sendKeys(fullName);
 }
