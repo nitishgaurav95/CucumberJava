@@ -1,0 +1,11 @@
+{
+  "fields": {
+    "project": {
+      "key": "TES"
+    },
+    "summary": "Sample bug created via API Automation - Akanksha Srivastava",
+    "issuetype": {
+      "name": "Bug"
+    }
+  }
+}
