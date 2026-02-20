@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Grasshopper Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Feb 20, 2026 12:29:30 PM</span></a>
+<a href="#"><span class="badge badge-primary">Feb 20, 2026 01:15:24 PM</span></a>
 </li>
 </ul>
 </div>
@@ -71,13 +71,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Feb 20, 2026 12:29:30 PM</h3>
+<h3>Feb 20, 2026 01:15:24 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Feb 20, 2026 12:29:34 PM</h3>
+<h3>Feb 20, 2026 01:15:29 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -167,7 +167,7 @@
 </div></div>
 <script>
 var timeline = {
-"Simple Jira API":3.217
+"Simple Jira API":4.101
 };
 </script>
 <div class="row">
@@ -177,7 +177,7 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@APIAutomation</td>
+<td>@AutomationPractice</td>
 <td>0</td>
 <td>1</td>
 <td>0</td>
@@ -255,7 +255,7 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@APIAutomation</a>
+<a class="dropdown-item" href="#">@AutomationPractice</a>
 </ul>
 </li>
 </ul>
@@ -268,7 +268,7 @@ eventsCount: 5,
           <div class="test-detail">
             <p class="name">Simple Jira API</p>
             <p class="text-sm">
-              <span>12:29:31 PM</span> / <span>00:00:03:217</span>
+              <span>1:15:24 PM</span> / <span>00:00:04:101</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -277,9 +277,9 @@ eventsCount: 5,
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">Simple Jira API</h5>
-<span class='badge badge-success'>02.20.2026 12:29:31 PM</span>
-<span class='badge badge-danger'>02.20.2026 12:29:34 PM</span>
-<span class='badge badge-default'>00:00:03:217</span>
+<span class='badge badge-success'>02.20.2026 1:15:24 PM</span>
+<span class='badge badge-danger'>02.20.2026 1:15:29 PM</span>
+<span class='badge badge-default'>00:00:04:101</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -292,6 +292,9 @@ eventsCount: 5,
     <div class="card-header" role="tab">
       <div class="card-title">
         <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>Validate Jira issue API</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
       </div>
     </div>
         <div class="">
@@ -301,18 +304,32 @@ eventsCount: 5,
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="StepDefinition.JIRA_API_Steps.check_status(int)">
-                <span>Then status code should be 200</span>
+              <div class="step fail-bg" title="StepDefinition.JIRA_API_Steps.check_status(int)">
+                <span>Then status code should be 400</span>
       <div>
-      </div>
-              </div>
-              <div class="step fail-bg" title="AFTER">
-                <span>Utility.Hooks.tearDown()</span>
-      <div>
-        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.quit()" because the return value of "Base.DriverHelper.getDriver()" is null
-	at Utility.Hooks.tearDown(Hooks.java:40)
+        <textarea disabled class="code-block">java.lang.AssertionError: expected [400] but found [200]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1383)
+	at org.testng.Assert.assertEquals(Assert.java:1429)
+	at StepDefinition.JIRA_API_Steps.check_status(JIRA_API_Steps.java:34)
+	at ✽.status code should be 400(file:///C:/CucumberJava/CucumberJava/src/test/resources/Features/JIRA_API.feature:6)
 </textarea>
       
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>Utility.Hooks.takeScreensotOnFailure(io.cucumber.java.Scenario)</span>
+      <div>screenshot
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../embedded1.png' src="../embedded1.png">
+    
+    </div></div>
+</div>
+      <div>
       </div>
               </div>
           </div>
@@ -343,12 +360,12 @@ eventsCount: 5,
 <span class="meta">
 <span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">@APIAutomation</p>
+<p class="name">@AutomationPractice</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@APIAutomation</h4>
+<h4>@AutomationPractice</h4>
 <span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -362,7 +379,7 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>12:29:31 PM</td>
+<td>13:15:24 PM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='2'>Validate Jira issue API</a>
 <div class="">
@@ -395,12 +412,12 @@ eventsCount: 5,
 <span class="meta">
 <span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">java.lang.NullPointerException</p>
+<p class="name">java.lang.AssertionError</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>java.lang.NullPointerException</h4>
+<h4>java.lang.AssertionError</h4>
 <span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -414,11 +431,11 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>12:29:34 PM</td>
+<td>13:15:28 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='8'>Utility.Hooks.tearDown()</a>
+<a href="#" class="linked" test-id='1' id='6'>Then status code should be 400</a>
 <div class="">
-<span class="badge badge-default">Simple Jira API.Validate Jira issue API.Utility.Hooks.tearDown()</span>
+<span class="badge badge-default">Simple Jira API.Validate Jira issue API.Then status code should be 400</span>
 </div>
 </td>
 </tr>

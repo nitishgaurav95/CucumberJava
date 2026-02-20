@@ -9,7 +9,7 @@ plugin = {"pretty",
 		"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
 		"rerun:target/failedRerun.txt",
 		"timeline:test-output-thread/"},
-tags="@APIAutomation"
+tags="@AutomationPractice"
 		)
 public class TestRunner {
 }
