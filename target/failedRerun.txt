@@ -1,1 +1,1 @@
-file:src/test/resources/Features/DemoQA.feature:7
+file:src/test/resources/Features/JIRA_API.feature:4

@@ -28,7 +28,7 @@ public class Hooks {
         WebDriver driver = new ChromeDriver(options);
         _driverHelper.setDriver(driver);
     }
-    
+
     @After
     public void tearDown()
     {

@@ -16,12 +16,15 @@ public class BasePage {
         PageFactory.initElements(driver, this);
     }
     
-    public String ReadDataFromProperties(String key) throws IOException
-    {
-    	Properties prop = new Properties();   	
-    	File file = new File("properties");  	
-    	FileInputStream fis = new FileInputStream(file); 	
-    	prop.load(fis);
-    	return prop.getProperty(key);   	
+    public static String ReadDataFromProperties(String key) throws IOException {
+
+    Properties prop = new Properties();
+
+    FileInputStream fis =
+            new FileInputStream("config.properties");
+
+    prop.load(fis);
+    return prop.getProperty(key);
     }
+
 }

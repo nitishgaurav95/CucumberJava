@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Grasshopper Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Feb 19, 2026 04:28:40 PM</span></a>
+<a href="#"><span class="badge badge-primary">Feb 20, 2026 12:29:30 PM</span></a>
 </li>
 </ul>
 </div>
@@ -71,13 +71,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Feb 19, 2026 04:28:40 PM</h3>
+<h3>Feb 20, 2026 12:29:30 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Feb 19, 2026 04:28:55 PM</h3>
+<h3>Feb 20, 2026 12:29:34 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -128,9 +128,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='50%'><b>1</b> scenarios passed</small></div>
+<div><small data-tooltip='0%'><b>0</b> scenarios passed</small></div>
 <div>
-<small data-tooltip='50%'><b>1</b> scenarios failed,
+<small data-tooltip='100%'><b>1</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -148,9 +148,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='88%'><b>8</b> steps passed</small></div>
+<div><small data-tooltip='66%'><b>2</b> steps passed</small></div>
 <div>
-<small data-tooltip='11%'><b>1</b> steps failed,
+<small data-tooltip='33%'><b>1</b> steps failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -167,7 +167,7 @@
 </div></div>
 <script>
 var timeline = {
-"This feature file is created to practice the automation using the Demo QA website.":15.365
+"Simple Jira API":3.217
 };
 </script>
 <div class="row">
@@ -177,12 +177,12 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@AutomationPractice</td>
-<td>1</td>
+<td>@APIAutomation</td>
+<td>0</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td>50%</td>
+<td>0%</td>
 </tr>
 </tbody>
 </table></div>
@@ -224,13 +224,13 @@ failParent: 1,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 1,
+passChild: 0,
 failChild: 1,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 8,
+passGrandChild: 2,
 failGrandChild: 1,
 warningGrandChild: 0,
 skipGrandChild: 0,
@@ -255,7 +255,7 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@AutomationPractice</a>
+<a class="dropdown-item" href="#">@APIAutomation</a>
 </ul>
 </li>
 </ul>
@@ -266,9 +266,9 @@ eventsCount: 5,
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">This feature file is created to practice the automation using the Demo QA website.</p>
+            <p class="name">Simple Jira API</p>
             <p class="text-sm">
-              <span>4:28:40 PM</span> / <span>00:00:15:365</span>
+              <span>12:29:31 PM</span> / <span>00:00:03:217</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -276,10 +276,10 @@ eventsCount: 5,
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">This feature file is created to practice the automation using the Demo QA website.</h5>
-<span class='badge badge-success'>02.19.2026 4:28:40 PM</span>
-<span class='badge badge-danger'>02.19.2026 4:28:55 PM</span>
-<span class='badge badge-default'>00:00:15:365</span>
+<h5 class="test-status text-fail">Simple Jira API</h5>
+<span class='badge badge-success'>02.20.2026 12:29:31 PM</span>
+<span class='badge badge-danger'>02.20.2026 12:29:34 PM</span>
+<span class='badge badge-default'>00:00:03:217</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -291,105 +291,28 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>01_Verify user can submit details and see output</div>
-          <div class="status-avatar float-right mr-4">
-            <i class="fa fa-paperclip"></i>
-          </div>
+        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>Validate Jira issue API</div>
       </div>
     </div>
         <div class="">
           <div class="card-body">
-              <div class="step pass-bg" title="StepDefinition.TextBoxDemoQASteps.I_launch_DemoQA_application()">
-                <span>Given I launch DemoQA application</span>
+              <div class="step pass-bg" title="StepDefinition.JIRA_API_Steps.call_jira_api()">
+                <span>Given I call Jira issue API</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="StepDefinition.DemoQAHomeSteps.I_click_on_the_Element_tiles_on_the_home_page()">
-                <span>When I click on the Element tiles on the home page</span>
+              <div class="step pass-bg" title="StepDefinition.JIRA_API_Steps.check_status(int)">
+                <span>Then status code should be 200</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="StepDefinition.DemoQAHomeSteps.I_click_on_the_Text_Box_option()">
-                <span>And I click on the Text Box option</span>
+              <div class="step fail-bg" title="AFTER">
+                <span>Utility.Hooks.tearDown()</span>
       <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="StepDefinition.TextBoxDemoQASteps.I_enter_first_name(java.lang.String)">
-                <span>When I enter first name "John"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="StepDefinition.TextBoxDemoQASteps.I_click_on_the_Submit_button()">
-                <span>And I click on the Submit button</span>
-      <div>
-      </div>
-              </div>
-              <div class="step fail-bg" title="StepDefinition.TextBoxDemoQASteps.I_verify_output_is_displayed_with_first_name(java.lang.String)">
-                <span>Then I verify output is displayed with first name "John"</span>
-      <div>
-        <textarea disabled class="code-block">org.openqa.selenium.InvalidSelectorException: invalid selector: The result of the xpath expression "//*[@id='name']/text()[2]" is: [object Text]. It should be an element.
-  (Session info: chrome=145.0.7632.76)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
-Build info: version: '4.28.1', revision: '73f5ad48a2'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [537a5e0fb461803fe8357db34f64db37, findElement {value=//*[@id='name']/text()[2], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.76, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\NGaurav\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49158}, goog:processID: 18412, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49158/devtoo..., se:cdpVersion: 145.0.7632.76, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 537a5e0fb461803fe8357db34f64db37
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(Unknown Source)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Unknown Source)
-	at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy23.getText(Unknown Source)
-	at PageClass.TextBoxDemoQAPage.VerifyTextPresentAfterSubmit(TextBoxDemoQAPage.java:44)
-	at StepDefinition.TextBoxDemoQASteps.I_verify_output_is_displayed_with_first_name(TextBoxDemoQASteps.java:50)
-	at ✽.I verify output is displayed with first name "John"(file:///C:/CucumberJava/CucumberJava/src/test/resources/Features/DemoQA.feature:12)
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.quit()" because the return value of "Base.DriverHelper.getDriver()" is null
+	at Utility.Hooks.tearDown(Hooks.java:40)
 </textarea>
       
-      </div>
-              </div>
-              <div class="step pass-bg" title="AFTER_STEP">
-                <span>Utility.Hooks.takeScreensotOnFailure(io.cucumber.java.Scenario)</span>
-      <div>screenshot
-          <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='../embedded1.png' src="../embedded1.png">
-    
-    </div></div>
-</div>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="17"><span class="badge log pass-bg mr-2">Pass</span>02_Verify Tools QA home page</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="StepDefinition.TextBoxDemoQASteps.I_launch_DemoQA_application()">
-                <span>Given I launch DemoQA application</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="StepDefinition.DemoQAHomeSteps.verify_the_element_present_on_the_home_page()">
-                <span>Then verify the element present on the home page</span>
-      <div>
       </div>
               </div>
           </div>
@@ -418,16 +341,14 @@ Session ID: 537a5e0fb461803fe8357db34f64db37
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>1</span>
 <span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">@AutomationPractice</p>
-<p class="duration text-sm">2 tests</p>
+<p class="name">@APIAutomation</p>
+<p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@AutomationPractice</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
+<h4>@APIAutomation</h4>
 <span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -441,21 +362,11 @@ Session ID: 537a5e0fb461803fe8357db34f64db37
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>16:28:40 PM</td>
+<td>12:29:31 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>01_Verify user can submit details and see output</a>
+<a href="#" class="linked" test-id='1' id='2'>Validate Jira issue API</a>
 <div class="">
-<span class="badge badge-default">This feature file is created to practice the automation using the Demo QA website..01_Verify user can submit details and see output</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>16:28:49 PM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='17'>02_Verify Tools QA home page</a>
-<div class="">
-<span class="badge badge-default">This feature file is created to practice the automation using the Demo QA website..02_Verify Tools QA home page</span>
+<span class="badge badge-default">Simple Jira API.Validate Jira issue API</span>
 </div>
 </td>
 </tr>
@@ -484,12 +395,12 @@ Session ID: 537a5e0fb461803fe8357db34f64db37
 <span class="meta">
 <span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">org.openqa.selenium.InvalidSelectorException</p>
+<p class="name">java.lang.NullPointerException</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>org.openqa.selenium.InvalidSelectorException</h4>
+<h4>java.lang.NullPointerException</h4>
 <span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -503,11 +414,11 @@ Session ID: 537a5e0fb461803fe8357db34f64db37
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>16:28:48 PM</td>
+<td>12:29:34 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='14'>Then I verify output is displayed with first name "John"</a>
+<a href="#" class="linked" test-id='1' id='8'>Utility.Hooks.tearDown()</a>
 <div class="">
-<span class="badge badge-default">This feature file is created to practice the automation using the Demo QA website..01_Verify user can submit details and see output.Then I verify output is displayed with first name "John"</span>
+<span class="badge badge-default">Simple Jira API.Validate Jira issue API.Utility.Hooks.tearDown()</span>
 </div>
 </td>
 </tr>
