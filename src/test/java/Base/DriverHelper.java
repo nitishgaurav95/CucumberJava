@@ -3,7 +3,7 @@ package Base;
 import org.openqa.selenium.WebDriver;
 
 public class DriverHelper {
-
+    
     private WebDriver driver;
 
     public WebDriver getDriver() {

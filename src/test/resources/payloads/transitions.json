@@ -1,0 +1,31 @@
+{
+    "transitions": [
+        {
+        "id": "11",
+        "name": "To Do",
+        "to": {
+            "self": "https://your-domain.atlassian.net/rest/api/3/status/1",
+            "description": "",
+            "iconUrl": "https://your-domain.atlassian.net/images/icons/statuses/open.png",
+            "name": "To Do",
+            "id": "1",
+            "statusCategory": {
+            "self": "https://your-domain.atlassian.net/rest/api/3/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "New"
+            }
+        },
+        "hasScreen": false,
+        "isGlobal": true,
+        "isInitial": true,
+        "isAvailable": true,
+        "_links": {
+            "self": {
+            "href": "https://your-domain.atlassian.net/rest/api/3/issue/10000/transitions?expand=transitions.fields"
+            }
+}
+        }
+    ]
+}

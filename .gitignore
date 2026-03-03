@@ -1,0 +1,33 @@
+# Build output
+target/
+bin/
+out/
+
+# IDE / workspace
+.vscode/
+.idea/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs / temp
+*.log
+*.tmp
+
+# Archives
+*.zip
+*.7z
+*.tar
+*.gz
+
+# Java
+*.class
+
+# Ensure no accidental user-level paths ever get committed
+AppData/
+**/AppData/**
+**/Cache/**
+**/CrashDumps/**
+OneDrive - DXC Production/

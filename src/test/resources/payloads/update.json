@@ -1,0 +1,21 @@
+{
+  "fields": {
+    "summary": "New summary for the issue",
+    "description": {
+      "type": "doc",
+      "version": 1,
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "This is the updated description using API",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
+
