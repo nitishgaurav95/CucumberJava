@@ -1,9 +1,16 @@
 package Utility;
+<<<<<<< HEAD
+=======
+
+>>>>>>> d7135bbe19bcf7b674b8c2298da3ddf2f27c9fc9
 import io.restassured.RestAssured;
 import io.restassured.specification.RequestSpecification;
 
 import java.io.IOException;
+<<<<<<< HEAD
 import java.util.Map;
+=======
+>>>>>>> d7135bbe19bcf7b674b8c2298da3ddf2f27c9fc9
 
 import Base.BasePage;
 
@@ -21,6 +28,7 @@ public class APIUtils {
                 .baseUri(jiraUrl)
                 .header("Content-Type", "application/json");
     }
+<<<<<<< HEAD
 
     public static RequestSpecification getUnauthenticatedRequestSpec() throws IOException {    
         String jiraUrl   = BasePage.ReadDataFromProperties("jira.base.url");
@@ -42,3 +50,6 @@ public class APIUtils {
         );  
    } 
 }
+=======
+}
+>>>>>>> d7135bbe19bcf7b674b8c2298da3ddf2f27c9fc9

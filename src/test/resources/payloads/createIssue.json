@@ -1,6 +1,7 @@
 {
   "fields": {
     "project": {
+<<<<<<< HEAD
       "key": "SCRUM"
     },
     "summary": "My First Task in this jira board",
@@ -10,3 +11,13 @@
   }
 }
 
+=======
+      "key": "TES"
+    },
+    "summary": "Sample bug created via API Automation - Akanksha Srivastava",
+    "issuetype": {
+      "name": "Bug"
+    }
+  }
+}
+>>>>>>> d7135bbe19bcf7b674b8c2298da3ddf2f27c9fc9

@@ -1,6 +1,8 @@
 package Utility;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+
 import Base.DriverHelper;
 // import io.cucumber.java.After;
 // import io.cucumber.java.Before;
@@ -16,6 +18,7 @@ public class Hooks {
 
   //  @Before
     public void InitializeBrowser() {
+<<<<<<< HEAD
            WebDriverManager.chromedriver().setup();
         
         WebDriver driver = new ChromeDriver();
@@ -23,6 +26,17 @@ public class Hooks {
     }
     
  //   @After
+=======
+        System.setProperty("webdriver.chrome.driver", "C:\\CucumberJava\\CucumberJava\\chromedriver.exe");
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--disable-extensions");
+        options.addArguments("--disable-notifications");
+        WebDriver driver = new ChromeDriver(options);
+        _driverHelper.setDriver(driver);
+    }
+
+    @After
+>>>>>>> d7135bbe19bcf7b674b8c2298da3ddf2f27c9fc9
     public void tearDown()
     {
     	_driverHelper.getDriver().quit();

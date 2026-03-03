@@ -15,6 +15,7 @@ public class BasePage {
     public BasePage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
+<<<<<<< HEAD
       }
 
   public static String ReadDataFromProperties(String key) throws IOException
@@ -24,5 +25,19 @@ public class BasePage {
     	FileInputStream fis = new FileInputStream(file); 	
     	prop.load(fis);
     	return prop.getProperty(key);   	
+=======
     }
+    
+    public static String ReadDataFromProperties(String key) throws IOException {
+
+    Properties prop = new Properties();
+
+    FileInputStream fis =
+            new FileInputStream("config.properties");
+
+    prop.load(fis);
+    return prop.getProperty(key);
+>>>>>>> d7135bbe19bcf7b674b8c2298da3ddf2f27c9fc9
+    }
+
 }
