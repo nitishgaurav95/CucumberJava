@@ -10,7 +10,6 @@ import Base.BasePage;
 public class APIUtils {
 
     public static RequestSpecification getRequestSpec() throws IOException {
-
         String jiraUser  = BasePage.ReadDataFromProperties("jira.user");
         String jiraToken = BasePage.ReadDataFromProperties("jira.token");
         String jiraUrl   = BasePage.ReadDataFromProperties("jira.base.url");

@@ -3,11 +3,13 @@ C:\CucumberJava\CucumberJava\src\test\java\Base\DriverHelper.java
 C:\CucumberJava\CucumberJava\src\test\java\PageClass\DemoQAHomePage.java
 C:\CucumberJava\CucumberJava\src\test\java\PageClass\FlipkartTestPage.java
 C:\CucumberJava\CucumberJava\src\test\java\PageClass\TextBoxDemoQAPage.java
+C:\CucumberJava\CucumberJava\src\test\java\pojo\JiraCommentRequest.java
 C:\CucumberJava\CucumberJava\src\test\java\StepDefinition\DemoQAHomeSteps.java
 C:\CucumberJava\CucumberJava\src\test\java\StepDefinition\FailedCasesRunner.java
 C:\CucumberJava\CucumberJava\src\test\java\StepDefinition\FlipkartTestSteps.java
 C:\CucumberJava\CucumberJava\src\test\java\StepDefinition\JIRA_API_Steps.java
 C:\CucumberJava\CucumberJava\src\test\java\StepDefinition\TestRunner.java
 C:\CucumberJava\CucumberJava\src\test\java\StepDefinition\TextBoxDemoQASteps.java
+C:\CucumberJava\CucumberJava\src\test\java\Utility\APIUtils.java
 C:\CucumberJava\CucumberJava\src\test\java\Utility\Hooks.java
 C:\CucumberJava\CucumberJava\src\test\java\Utility\UtilityClass.java

@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Grasshopper Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Feb 20, 2026 04:18:15 PM</span></a>
+<a href="#"><span class="badge badge-primary">Mar 5, 2026 12:40:28 PM</span></a>
 </li>
 </ul>
 </div>
@@ -66,13 +66,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Feb 20, 2026 04:18:15 PM</h3>
+<h3>Mar 5, 2026 12:40:28 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Feb 20, 2026 04:18:21 PM</h3>
+<h3>Mar 5, 2026 12:40:39 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -123,7 +123,7 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>2</b> scenarios passed</small></div>
+<div><small data-tooltip='100%'><b>3</b> scenarios passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
@@ -143,7 +143,7 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>4</b> steps passed</small></div>
+<div><small data-tooltip='100%'><b>7</b> steps passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> steps failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
@@ -162,7 +162,7 @@
 </div></div>
 <script>
 var timeline = {
-"Simple Jira API":5.601
+"Simple Jira API":10.386
 };
 </script>
 <div class="row">
@@ -173,7 +173,7 @@ var timeline = {
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
 <td>@AutomationPractice</td>
-<td>2</td>
+<td>3</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -219,13 +219,13 @@ failParent: 0,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 2,
+passChild: 3,
 failChild: 0,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 4,
+passGrandChild: 7,
 failGrandChild: 0,
 warningGrandChild: 0,
 skipGrandChild: 0,
@@ -263,7 +263,7 @@ eventsCount: 5,
           <div class="test-detail">
             <p class="name">Simple Jira API</p>
             <p class="text-sm">
-              <span>4:18:16 PM</span> / <span>00:00:05:601</span>
+              <span>12:40:29 PM</span> / <span>00:00:10:386</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -272,9 +272,9 @@ eventsCount: 5,
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Simple Jira API</h5>
-<span class='badge badge-success'>02.20.2026 4:18:16 PM</span>
-<span class='badge badge-danger'>02.20.2026 4:18:21 PM</span>
-<span class='badge badge-default'>00:00:05:601</span>
+<span class='badge badge-success'>03.05.2026 12:40:29 PM</span>
+<span class='badge badge-danger'>03.05.2026 12:40:39 PM</span>
+<span class='badge badge-default'>00:00:10:386</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -325,6 +325,32 @@ eventsCount: 5,
           </div>
         </div>
   </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="16"><span class="badge log pass-bg mr-2">Pass</span>03_Verify user can add comment to Jira issue</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinition.JIRA_API_Steps.i_add_comment_to_jira_issue(java.lang.String,java.lang.String)">
+                <span>Given I add comment "Comment added from Cucumber API automation" to Jira issue "TES-7"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.JIRA_API_Steps.check_status(int)">
+                <span>Then status code should be 201</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.JIRA_API_Steps.comment_response_should_contain_issue_key_id_and_self_url(java.lang.String)">
+                <span>And comment response should contain issue key "TES-7", id and self URL</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
 </div>
           </div>
         </li>
@@ -348,15 +374,15 @@ eventsCount: 5,
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>2</span>
+<span class='badge log pass-bg'>3</span>
 </span>
 <p class="name">@AutomationPractice</p>
-<p class="duration text-sm">2 tests</p>
+<p class="duration text-sm">3 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
 <h4>@AutomationPractice</h4>
-<span status="pass" class='badge log pass-bg'>2 passed</span>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -369,7 +395,7 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>16:18:16 PM</td>
+<td>12:40:29 PM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='2'>01_Validate Jira issue API</a>
 <div class="">
@@ -379,11 +405,21 @@ eventsCount: 5,
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>16:18:19 PM</td>
+<td>12:40:34 PM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='9'>02_Verify user can create a new Jira issue</a>
 <div class="">
 <span class="badge badge-default">Simple Jira API.02_Verify user can create a new Jira issue</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:40:36 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='16'>03_Verify user can add comment to Jira issue</a>
+<div class="">
+<span class="badge badge-default">Simple Jira API.03_Verify user can add comment to Jira issue</span>
 </div>
 </td>
 </tr>

@@ -5,7 +5,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import Base.BasePage;
 import Utility.UtilityClass;
-import java.lang.Thread;
 
 import org.junit.Assert;
 
