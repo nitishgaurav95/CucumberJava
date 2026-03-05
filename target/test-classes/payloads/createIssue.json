@@ -3,7 +3,11 @@
     "project": {
       "key": "TES"
     },
+<<<<<<< HEAD
     "summary": "Sample bug created via API Automation - Akanksha Srivastava 090588 - part2",
+=======
+    "summary": "Sample bug created via REST API - Commenting on Issue",
+>>>>>>> a972f50a8596c48c6b039d909f362ef4d6b96684
     "issuetype": {
       "name": "Bug"
     }

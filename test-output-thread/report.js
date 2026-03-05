@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 $(document).ready(function() {
 CucumberHTML.timelineItems.pushArray([{"id":"ddd4df06-8164-4d05-93b9-d3c317065ba9","feature":"Simple Jira API","scenario":"03_Verify user can add comment to Jira issue","start":1772694636881,"group":3,"content":"","tags":"@automationpractice,","end":1772694639531,"className":"passed"},{"id":"bb15ba4e-7265-45a9-8d5c-5aa09f0c0236","feature":"Simple Jira API","scenario":"02_Verify user can create a new Jira issue","start":1772694634503,"group":3,"content":"","tags":"@automationpractice,","end":1772694636875,"className":"passed"},{"id":"1fd1976a-59b9-41c5-aa32-e9a3c90f81d0","feature":"Simple Jira API","scenario":"01_Validate Jira issue API","start":1772694629116,"group":3,"content":"","tags":"@automationpractice,","end":1772694634494,"className":"passed"}]);
 CucumberHTML.timelineGroups.pushArray([{"id":3,"content":"Thread[#3,main,5,main]"}]);
 });
+=======
+>>>>>>> a972f50a8596c48c6b039d909f362ef4d6b96684

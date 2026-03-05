@@ -20,6 +20,11 @@ public class JiraCommentRequest {
         this.body = body;
     }
 
+<<<<<<< HEAD
+=======
+    // ---------- INNER CLASSES ----------
+
+>>>>>>> a972f50a8596c48c6b039d909f362ef4d6b96684
     public static class Body {
         private String type;
         private int version;
@@ -113,4 +118,8 @@ public class JiraCommentRequest {
             this.text = text;
         }
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> a972f50a8596c48c6b039d909f362ef4d6b96684
