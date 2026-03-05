@@ -1,4 +1,0 @@
-$(document).ready(function() {
-CucumberHTML.timelineItems.pushArray([{"id":"76432b31-e2cd-43b4-95eb-5847d6d310fd","feature":"Simple Jira API","scenario":"01_Validate Jira issue API","start":1771584496086,"group":1,"content":"","tags":"@automationpractice,","end":1771584499533,"className":"passed"},{"id":"f429ae42-bf93-4930-98f5-2c7f71e24e81","feature":"Simple Jira API","scenario":"02_Verify user can create a new Jira issue","start":1771584499533,"group":1,"content":"","tags":"@automationpractice,","end":1771584501724,"className":"passed"}]);
-CucumberHTML.timelineGroups.pushArray([{"id":1,"content":"Thread[#1,main,5,main]"}]);
-});

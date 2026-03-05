@@ -3,7 +3,7 @@
     "project": {
       "key": "TES"
     },
-    "summary": "Sample bug created via API Automation - Akanksha Srivastava",
+    "summary": "Sample bug created via REST API - Commenting on Issue",
     "issuetype": {
       "name": "Bug"
     }
