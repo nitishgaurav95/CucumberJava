@@ -1,17 +1,13 @@
 package Utility;
-<<<<<<< HEAD
-=======
 
->>>>>>> d7135bbe19bcf7b674b8c2298da3ddf2f27c9fc9
 import io.restassured.RestAssured;
+import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
+import java.io.File;
 import java.io.IOException;
-<<<<<<< HEAD
 import java.util.Map;
-=======
->>>>>>> d7135bbe19bcf7b674b8c2298da3ddf2f27c9fc9
-
+import java.util.List;
 import Base.BasePage;
 
 public class APIUtils {
@@ -24,32 +20,55 @@ public class APIUtils {
 
         return RestAssured
                 .given()
-                .auth().preemptive().basic(jiraUser, jiraToken)
+                .log().all()
                 .baseUri(jiraUrl)
+
                 .header("Content-Type", "application/json");
     }
-<<<<<<< HEAD
-
     public static RequestSpecification getUnauthenticatedRequestSpec() throws IOException {    
         String jiraUrl   = BasePage.ReadDataFromProperties("jira.base.url");
 
         return RestAssured
                 .given()
+                .log().all()
                 .baseUri(jiraUrl)
                 .header("Content-Type", "application/json");
     }
 
-    public static Map<String, Object> buildCreateIssueRequestBody(String summary, String description) {
+    public static Map<String, Object> buildCreateIssueRequestBody(String summary, String description) throws IOException {
+
+    String projectKey = BasePage.ReadDataFromProperties("jira.project.key");
+        Map<String, Object> descriptionBody = Map.of(
+            "type", "doc",
+            "version", 1,
+            "content", List.of(
+                    Map.of(
+                            "type", "paragraph",
+                            "content", List.of(
+                                    Map.of(
+                                            "type", "text",
+                                            "text", description
+                                    )
+                            )
+                    )
+            )
+    );
         return Map.of(
-                "fields", Map.of(
-                        "project", Map.of("key", "TEST"),
-                        "summary", summary,
-                        "description", description,
-                        "issuetype", Map.of("name", "Task")
-                )
-        );  
-   } 
+            "fields", Map.of(
+                    "project", Map.of("key", projectKey),
+                    "summary", summary,
+                    "description", descriptionBody,
+                    "issuetype", Map.of("name", "Task")
+            )
+    );
 }
-=======
+    public static void validateJsonSchema(Response response, String s) {
+        try {
+            String schemaPath = "src/test/resources/Schemas/" + s;
+            response.then().assertThat().body(io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema(new File(schemaPath)));
+        } catch (Exception e) {
+            throw new RuntimeException("Failed to validate JSON schema: " + e.getMessage(), e);
+        }
+    }
 }
->>>>>>> d7135bbe19bcf7b674b8c2298da3ddf2f27c9fc9
+   

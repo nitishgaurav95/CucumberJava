@@ -13,4 +13,9 @@ public class urls {
     public static final String CREATE_COMMENT = "/rest/api/3/issue/{issueKey}/comment";
     public static final String TRANSITION_ISSUE = "/rest/api/3/issue/{issueKey}/transitions";
     public static final String UPDATE_ISSUE = "/rest/api/3/issue/{issueKey}";
+    public static final String CREATE_ISSUE_WITH_ATTACHMENT = "/rest/api/3/issue/{issueKey}/attachments";
+    public static final String GET_ISSUE_WITH_ATTACHMENT = "/rest/api/3/issue/{issueKey}?fields=attachment";
+    public static final String GET_ISSUE_WITHOUT_ATTACHMENT = "/rest/api/3/issue/{issueKey}?fields=attachment";
+    public static final String GET_ISSUE_WITHOUT_ATTACHMENT_AND_PERMISSIONS = "/rest/api/3/issue/{issueKey}?fields=attachment";
+    public static final String GET_ISSUE_WITHOUT_ATTACHMENT_AND_MANDATORY_FIELDS = "/rest/api/3/issue/INVALID-1?fields=attachment";
 }
