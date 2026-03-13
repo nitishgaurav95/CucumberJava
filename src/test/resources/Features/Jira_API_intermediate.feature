@@ -12,14 +12,17 @@ Scenario: 02_Verify user cannot fetch issue with invalid key
   
 @BDDRestAssuredPracticeIntermediate
 Scenario: 03_Verify user can assign issue to another user   
-    Given I call Jira assign API for issue with "SCRUM-2" to user "aparna"
+    Given I call Jira assign issue API for issue with "SCRUM-2" to assign to user "aparna"
     Then the status code should be 204
+    When I get the issue details for issue with "SCRUM-2"
+    Then I should see the assignee as "aparna"
 
 @BDDRestAssuredPracticeIntermediate
 Scenario: 04_Verify user can transition issue status
-    Given I call Jira transition issue API for issue with "SCRUM-2" to status "To Do"
-    Then the status code should be 200
-    Then I should see the transition status as "To Do"
+    Given I call Jira transition API for issue with "SCRUM-2" to transition "In Progress"
+    Then the status code should be 204
+    When I get the issue details for issue with "SCRUM-2"
+    Then I should see the transition status as "In Progress"
 
 @BDDRestAssuredPracticeIntermediate
 Scenario: 05_Verify user cannot update issue without permission

@@ -22,7 +22,7 @@ public class APIUtils {
                 .given()
                 .log().all()
                 .baseUri(jiraUrl)
-
+                .auth().preemptive().basic(jiraUser, jiraToken)
                 .header("Content-Type", "application/json");
     }
     public static RequestSpecification getUnauthenticatedRequestSpec() throws IOException {    
@@ -38,7 +38,14 @@ public class APIUtils {
     public static Map<String, Object> buildCreateIssueRequestBody(String summary, String description) throws IOException {
 
     String projectKey = BasePage.ReadDataFromProperties("jira.project.key");
-        Map<String, Object> descriptionBody = Map.of(
+
+    String issueType = BasePage.ReadDataFromProperties("jira.issue.type");
+
+    if (projectKey == null || projectKey.isEmpty()) {
+        throw new RuntimeException("jira.project.key is missing in Config.properties");
+    }
+
+    Map<String, Object> descriptionBody = Map.of(
             "type", "doc",
             "version", 1,
             "content", List.of(
@@ -53,15 +60,17 @@ public class APIUtils {
                     )
             )
     );
-        return Map.of(
+    return Map.of(
             "fields", Map.of(
                     "project", Map.of("key", projectKey),
                     "summary", summary,
                     "description", descriptionBody,
-                    "issuetype", Map.of("name", "Task")
+                    "issuetype", Map.of("name", "" + issueType + "")
             )
     );
 }
+
+
     public static void validateJsonSchema(Response response, String s) {
         try {
             String schemaPath = "src/test/resources/Schemas/" + s;
